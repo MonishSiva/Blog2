@@ -49,6 +49,7 @@
 <script>
     $('#addSubBlog').click(function () {
         let clone = $('.sub-blog').first().clone();
+        console.log(clone);
         clone.find('input, textarea').val('');
         $('#subBlogWrapper').append(clone);
     });
